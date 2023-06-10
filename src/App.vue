@@ -1,47 +1,19 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
+import nombre from './components/Cabeza.vue'
+import lado from './components/Cuerpo.vue'
 </script>
 
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+<template >
+  <header >
+    <nombre class="text-2xl bg-blue-300 text-black-500" />
+  </header >
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
-</template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+  <main >
+    <cabecera/>
+  </main >
+  <aside class="text-2xl bg-gray-300 text-black-500">
+    <lado class="text-2xl bg-blue-300 text-black-500"/>
+      
+  </aside >
+</template >
